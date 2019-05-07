@@ -3,6 +3,7 @@ package Chapter7_2.usermng.service;
 
 import Chapter7_2.usermng.dao.DaoFactory;
 import Chapter7_2.usermng.dao.UserDao;
+import Chapter7_2.usermng.domain.BorrowBook;
 import Chapter7_2.usermng.domain.User;
 
 /**
@@ -59,5 +60,15 @@ public class UserService {
 		 */
 		return user;
 		
+	}
+	public	BorrowBook borrowBook(BorrowBook form) throws UserException{
+		if(form==null) throw new UserException("该书不存在！！");
+		int flag=userDao.borrowBook(form);
+		if(flag==0) throw new UserException("已经超过8本！！请还书 后再借阅！");
+		return form;
+	}
+	public void backBook(BorrowBook form) throws UserException{
+		if(form==null) throw new UserException("操作失败！");
+		userDao.backBook(form);
 	}
 }

@@ -10,7 +10,12 @@
 <head>
     <title>管理员界面</title>
 </head>
-<body>
-    <p><a href="Delete_User.jsp">删除管理普通用户</a> </p>
-</body>
+    <frameset rows="20%,*">
+        <frame src="Welcome.jsp" name="welcome">
+        <frameset cols="60%,*">
+            <frame src="GMmenu.jsp" name="all">
+            <%--<frame src="Delete_User.jsp" name="GmUser">--%>
+        </frameset>
+    </frameset>
+
 </html>

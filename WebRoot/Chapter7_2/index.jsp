@@ -3,20 +3,17 @@
 <html>
   <head>
     
-    <title>My JSP 'index.jsp' starting page</title>
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
+    <title>登录后界面</title>
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
   </head>
-  
-  <body>
-  <h3>欢迎登录本系统</h3>
+  <frameset rows="20%,*">
+      <frame src="Welcome.jsp" name="welcome">
+      <frameset cols="50%,*">
+          <frame src="userMenu.jsp" name="usermenu">
+          <%--<frame src="Delete_User.jsp" name="GmUser">--%>
+      </frameset>
+  </frameset>
 
-
-  </body>
 </html>

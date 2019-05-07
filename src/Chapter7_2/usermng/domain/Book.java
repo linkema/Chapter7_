@@ -6,7 +6,14 @@ public class Book {
     private String author;
     private String price;
     private String note;
-
+    public Book(){}
+    public Book(String bookid,String bookname,String price,String author,String note){
+        bookNo=bookid;
+        bookName=bookname;
+        this.price=price;
+        this.author=author;
+        this.note=note;
+    }
     public String getBookNo() {
         return bookNo;
     }

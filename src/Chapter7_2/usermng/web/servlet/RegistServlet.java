@@ -52,7 +52,7 @@ public class RegistServlet extends HttpServlet {
 		 * 1. 非空校验：用户名不能为空！
 		 * 2. 长度校验：用户名长度必须在3~15之间！
 		 */
-		User user=new User(request.getParameter("username"),request.getParameter("password"));
+		User user=new User(request.getParameter("username"),request.getParameter("password"),request.getParameter("repassword"),request.getParameter("verifyCode"));
 		String username = user.getUsername();
 		if(username == null || username.trim().isEmpty()) {//非空校验
 			errors.put("username", "用户名不能为空！");
@@ -111,6 +111,7 @@ public class RegistServlet extends HttpServlet {
 			 *   输出“成功信息”
 			 */
 			response.getWriter().print("恭喜，注册成功！");
+			response.sendRedirect("Chapter7_2/index.jsp");
 		} catch (UserException e) {
 			/*
 			 * 执行到这里，说明注册失败了！

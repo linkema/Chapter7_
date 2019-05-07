@@ -29,12 +29,68 @@
         <url-pattern>/RegistServlet</url-pattern>
     </servlet-mapping>
     <servlet>
-        <servlet-name>GmServlet</servlet-name>
-        <servlet-class>Chapter7_2.usermng.web.servlet.GmServlet</servlet-class>
+        <servlet-name>VerifyCode</servlet-name>
+        <servlet-class>Chapter7_2.usermng.web.servlet.VerifyCodeServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>GmServlet</servlet-name>
-        <url-pattern>/GmServlet</url-pattern>
+        <servlet-name>VerifyCode</servlet-name>
+        <url-pattern>/VerifyCodeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteServlet</servlet-name>
+        <servlet-class>Chapter7_2.usermng.web.servlet.DeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteServlet</servlet-name>
+        <url-pattern>/DeleteServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>InsertBookServlet</servlet-name>
+        <servlet-class>Chapter7_2.usermng.web.servlet.InsertBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertBookServlet</servlet-name>
+        <url-pattern>/InsertBookServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ModifyBookServlet</servlet-name>
+        <servlet-class>Chapter7_2.usermng.web.servlet.ModifyBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyBookServlet</servlet-name>
+        <url-pattern>/ModifyBookServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SearchBookServlet</servlet-name>
+        <servlet-class>Chapter7_2.usermng.web.servlet.SearchBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchBookServlet</servlet-name>
+        <url-pattern>/SearchBookServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteBookServlet</servlet-name>
+        <servlet-class>Chapter7_2.usermng.web.servlet.DeletebookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteBookServlet</servlet-name>
+        <url-pattern>/DeleteBookServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>BorrowBookServlet</servlet-name>
+        <servlet-class>Chapter7_2.usermng.web.servlet.BorrowBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BorrowBookServlet</servlet-name>
+        <url-pattern>/BorrowBookServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>BackBookServlet</servlet-name>
+        <servlet-class>Chapter7_2.usermng.web.servlet.BackBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BackBookServlet</servlet-name>
+        <url-pattern>/BackBookServlet</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>

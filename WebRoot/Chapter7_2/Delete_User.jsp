@@ -11,6 +11,14 @@
     <title>删除用户操作界面</title>
 </head>
 <body>
-
+<h1>  请选择删除记录条件</h1><br>
+<p style="color: red; font-size: 11pt; font-weight: 900;">
+    ${msg }
+</p>
+<form action="/Chapter7_/DeleteServlet" method="post">
+    用户名：<input type="text" name="username"><br><br>
+    <input type="submit" value="提交">
+    <input type="reset" value="取消">
+</form>
 </body>
 </html>

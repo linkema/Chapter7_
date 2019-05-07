@@ -21,9 +21,10 @@
             */
             var imgEle = document.getElementById("imgEle");
             // 设置它的src为servlet
-            imgEle.src = "<c:url value='/VerifyCodeServlet'/>?" + new Date().getTime();
+            imgEle.src = "/Chapter7_/VerifyCodeServlet" + new Date().getTime();
         }
     </script>
+    <%----%>
 </head>
 
 <body>
@@ -40,7 +41,7 @@
 
  --%>
 <p style="color: red; font-size: 11pt; font-weight: 900;">${msg }</p>
-<form action="<c:url value='/Chapter7_/RegistServlet'/>" method="post">
+<form action="/Chapter7_/RegistServlet" method="post">
     用户名：<input type="text" name="username" value="${form.username }"/>
     <span style="color: red; font-size: 10pt; font-weight: 900;">
         ${errors.username }
@@ -55,7 +56,7 @@
         ${errors.repassword }
     </span><br/>
     验证码：<input type="text" name="verifyCode" size="3" value="${form.verifyCode }"/>
-    <img src="<c:url value='/VerifyCodeServlet'/>" id="imgEle"/>
+    <img src="/Chapter7_/VerifyCodeServlet" id="imgEle"/>
     <a href="javascript:_change()">换一张</a>
     <span style="color: red; font-size: 10pt; font-weight: 900;">
         ${errors.verifyCode }

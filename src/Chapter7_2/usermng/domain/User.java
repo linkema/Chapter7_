@@ -52,14 +52,20 @@ public class User {
 		this.password = password;
 	}
 
-    public User(String username,String password){
+    public User(String username,String password,String repassword,String verifyCode){
 	    this.username=username;
 	    this.password=password;
+	    this.repassword=repassword;
+	    this.verifyCode=verifyCode;
     }
+    public User(String username, String password){
+    	this.username=username;
+    	this.password=password;
+	}
 	@Override
 	public String toString() {
 		return "User [username=" + username + ", password=" + password
-				+ ", age=" +  ", gender="  + ", repassword="
+				 + ", repassword="
 				+ repassword + ", verifyCode=" + verifyCode + "]";
 	}
 }

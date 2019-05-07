@@ -11,6 +11,14 @@
     <title>删除书界面</title>
 </head>
 <body>
-
+<h1>  请选择删除记录条件</h1><br>
+<p style="color: red; font-size: 11pt; font-weight: 900;">
+    ${msg }
+</p>
+<form action="/Chapter7_/DeleteBookServlet" method="post">
+    图书号<input type="text" name="id"><br><br>
+    <input type="submit" value="提交">
+    <input type="reset" value="取消">
+</form>
 </body>
 </html>
